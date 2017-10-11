@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/rits17.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="titlepage">
+				  <div style="float:left;width:42%;">
+				    <h3>The Craftsperson</h3>
+				    <h3><span class="bigand">&</span> The Scholar</h3>
+				    <p>by James Hetherington</p>
+				  </div>
+				  <img src="assets/craftsperson-scholar.png" style="width:55%;float:right;">
+				  <div class="logo-holder">
+				    <img src="assets/ATI-logo.png" style="float:left;width:40%">
+				    <img src="assets/UCL-logo.png" style="float:right;width:60%">
+				  </div>
+				</section>
+				<section class="chapter-title">
+				  <h3 style="text-align:center">James Hetherington</h3>
+				  <img src="assets/JH-me.svg">
+				</section>
+				<section>
+				  <section class="chapter-title">
+				  <h3>The State Of Research Software</h3>
+				  </section>
+				  <section class="diagram2">
+				    <h3>The <span style="color:#AC145A">SIRO</span> problem:</h3>
+				    <img src="assets/SIRO.svg">
+				  </section>
+				  <section>
+					<h3>PhDWare</h3>
+					<ul>
+					<li>Don't stop to check if it's been done before</li>
+					<li>Code until it works</li>
+					<li>Generate a figure</li>
+					<li>Throw it away</li>
+					</ul>
+				  </section>
+				  <section>
+					<h3>LabWare</h3>
+					<ul>
+					<li>Understood by one genius</li>
+					<li>Implements great science, now</li>
+					<li>FORTRAN in any language</li>
+					<li>Code not engineered for readability</li>
+					<li>Can't add new science</li>
+					</ul>
+				  </section>
+				  <section>
+					<h3>HPCWare</h3>
+					<ul>
+					<li>Get a 5% improvement in performance…</li>
+					<li>…on a particular architecture</li>
+					<li>Publish a scaling graph</li>
+					<li>Selection against:
+					  <ul>
+					  <li>- Readability</li>
+					  <li>- Maintainability</li>
+					  <li>- Adaptability</li>
+					  </ul></li>
+					</ul>
+				  </section>
+				  <section>
+					<h3>ConsultantWare</h3>
+					<ul>
+					<li>Little understanding of the science</li>
+					<li>Over engineered</li>
+					<li>Unmaintainable by the research group</li>
+					</ul>
+				  </section>
+				</section>
+				<section>
+				  <section class="chapter-title">
+				    <h3>Research Software Developers</h3>
+				  </section>
+				  <section class="diagram2">
+				    <h3>Research Software Engineers</h3>
+				    <img src="assets/RSE-Venn.png">
+				  </section>
+				  <section class="case-study" class="titlepage">
+					<img src="/assets/hemelb1.png" style="width:33%;float:right;">
+					<div style="width:64%;float:left;">
+					<h4>Reliability unlocks new science</h4>
+					<h5>HemeLB Setup Tool</h5>
+					<ul>
+					  <li>Can handle all geometries instead of 19 in 20</li>
+					  <li>Means can model changing geometries</li>
+					</ul>
+					</div>
+				  </section>
+				  <section class="case-study">
+					<h4>Helping legacy code live</h4>
+					<h5>DCProgs</h5>
+					<div style="width:50%; float:right;">
+					  <ul>
+					    <li>Venerable Fortran</li>
+					    <li>Hasn't compiled since 2006</li>
+					    <li>Underpins Nature published research</li>
+					  </ul>
+					</div>
+					<img src="/assets/dcprogs-img1.jpg" style="width:40%;float:left;">
+				  </section>
+				  <section class="case-study">
+					<h4>Helping legacy code live</h4>
+					<h5>DCProgs</h5>
+					<div style="width:50%; float:right;">
+					  <ul>
+					    <li>Old code as "test oracle"</li>
+					    <li>Reimplemented in C++ and Python</li>
+					    <li>Use linear algebra and root finding libraries</li>
+					    <li>Not slower</li>
+					  </ul>
+					</div>
+					<img src="/assets/dcprogs-img1.jpg" style="width:40%;float:left;">
+				  </section>
+				</section>
+				<section>
+				  <section class="chapter-title">
+				    <h3>Lessons learned</h3>
+				  </section>
+				  <section class="poster" id="windvane">
+				    <img src="assets/windvane.png">
+				    <h4>Use appropriate technology</h4>
+				  </section>
+				  <section class="poster" id="flymac">
+				    <img src="assets/flying-machine.png">
+				    <h4>Sell performance</h4>
+				    <h4>Deliver reproducibility</h4>
+				  </section>
+				  <section class="poster" id="ancient">
+				    <h4>Look beyond the usual</h4>
+				    <img src="assets/ancient-tech.png">
+				  </section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

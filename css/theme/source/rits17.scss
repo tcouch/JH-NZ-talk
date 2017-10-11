@@ -1,0 +1,186 @@
+/**
+ * RITS theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(../../lib/font/franklin-gothic/franklin-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black|Merriweather|Quicksand:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #003D4C;
+$mainFontSize: 42px;
+$mainFont: 'Quicksand', Helvetica, sans-serif;
+
+$headingColor: #003D4C;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$headingTextTransform: none;
+$headingFont: 'Archivo Black', sans-serif;
+$backgroundColor: #D6D2C4;
+$linkColor: #8b743d;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// My CSS
+
+.reveal .slides {
+	text-align:left;
+}
+
+.reveal ul {
+//	list-style-type:square;
+	list-style-image: url('../../assets/chkbox.png');
+	
+}
+
+.reveal ul ul {
+	list-style-type:none;
+	list-style-image: none;
+}
+
+
+//Title page stuff
+.reveal .titlepage h3 {
+	font-size:1em;
+	margin: 0px;
+}
+
+.reveal .titlepage p {
+	font-size:0.75em;
+	font-family: "Merriweather", serif;
+	font-style:italic;
+}
+
+.reveal .titlepage img {
+	margin: 0px;
+	border:none;
+}
+
+.reveal .logo-holder {
+	position:absolute;
+	bottom:0;
+}
+
+.reveal .titlepage .logo-holder {
+	width:42%;
+	padding-bottom:20px;
+}
+
+.reveal .bigand {
+	font-size:1.55em;
+	color:#AC145A;
+	font-family: "Merriweather", serif;
+}
+
+//Chapter titles
+.reveal .chapter-title {
+	background-color:#003D4C;
+}
+.reveal .chapter-title h3 {
+	color:#FFD135;
+}
+
+.reveal .chapter-title img {
+	margin: 0px;
+	border:none;
+	background:none;
+	box-shadow:none;
+}
+
+//Case study slides
+
+.reveal .case-study h3,
+.reveal .case-study h4 {
+	color:#AC145A;
+}
+
+.reveal .case-study h5 {
+	font-family: "Merriweather", serif;
+	font-size: 0.875em;
+}
+
+.reveal .case-study p {
+	font-family: "Merriweather", serif;
+	font-size: 0.75em;
+}
+
+.reveal .case-study li {
+	list-style-image: none;
+	list-style-type:disc;
+	font-size: 0.75em;
+}
+
+.reveal .diagram2 {
+	background-color:#8F993E;
+}
+
+.reveal .diagram2 h3 {
+	color:#D6D2C4;
+}
+
+.reveal .diagram2 img {
+	margin: 0px;
+	border:none;
+	background:none;
+	box-shadow:none;
+}
+
+//Poster styles
+
+.reveal .poster img {
+	width:100%;
+	max-width:100%;
+	max-height:100%;
+	margin:none;
+}
+
+#windvane h4 {
+	position:absolute;
+	top:75px;
+	right:30px;
+	color:#FFD135;
+	font-size: 35px;
+}
+
+#flymac h4:nth-of-type(1) {
+	position:absolute;
+	top:45px;
+	left:20px;
+	color:#003D4C;
+	font-size: 35px;
+}
+
+#flymac h4:nth-of-type(2) {
+	position:absolute;
+	bottom:35px;
+	right:30px;
+	color:#003D4C;
+	font-size: 35px;
+}
+
+
+#ancient h4 {
+	width:100%;
+	text-align:right;
+	color:#AC145A;
+	background-color:#D6D2C4;
+}
