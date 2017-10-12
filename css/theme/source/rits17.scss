@@ -53,8 +53,12 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 }
 
 .reveal ul ul {
-	list-style-type:none;
+	list-style-type:circle;
 	list-style-image: none;
+}
+
+.reveal table {
+	font-size:0.75em;
 }
 
 
@@ -115,11 +119,10 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 
 .reveal .case-study h5 {
 	font-family: "Merriweather", serif;
-	font-size: 0.875em;
+	font-size: 0.75em;
 }
 
 .reveal .case-study p {
-	font-family: "Merriweather", serif;
 	font-size: 0.75em;
 }
 

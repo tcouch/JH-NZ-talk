@@ -297,8 +297,11 @@ body {
   list-style-image: url("../../assets/chkbox.png"); }
 
 .reveal ul ul {
-  list-style-type: none;
+  list-style-type: circle;
   list-style-image: none; }
+
+.reveal table {
+  font-size: 0.75em; }
 
 .reveal .titlepage h3 {
   font-size: 1em;
@@ -344,10 +347,9 @@ body {
 
 .reveal .case-study h5 {
   font-family: "Merriweather", serif;
-  font-size: 0.875em; }
+  font-size: 0.75em; }
 
 .reveal .case-study p {
-  font-family: "Merriweather", serif;
   font-size: 0.75em; }
 
 .reveal .case-study li {
