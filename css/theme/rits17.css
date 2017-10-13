@@ -401,3 +401,48 @@ body {
   text-align: right;
   color: #AC145A;
   background-color: #D6D2C4; }
+
+#judo img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#judo h4:nth-of-type(1) {
+  position: absolute;
+  bottom: 155px;
+  right: 185px;
+  color: #8F993E; }
+
+#judo h4:nth-of-type(2) {
+  position: absolute;
+  bottom: 105px;
+  right: 185px;
+  color: white; }
+
+#crafty img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#crafty h4:nth-of-type(1) {
+  position: absolute;
+  top: 45px;
+  left: 155px;
+  color: #D6D2C4;
+  font-size: 35px; }
+
+#crafty h4:nth-of-type(2) {
+  color: #003D4C;
+  font-size: 25px;
+  text-align: center; }
+
+#it-crowd img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#it-crowd h4 {
+  color: #AC145A;
+  text-align: center; }
